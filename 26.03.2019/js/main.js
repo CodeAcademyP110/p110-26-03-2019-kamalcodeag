@@ -6,7 +6,43 @@
 
 //Home task - 1
 
+// let result = [];
+
+// for (let i=0; i<7; i++)
+// {
+//     let userInput = prompt(`Please, insert ${i+1}. number :`);
+//     let converted = +userInput;
+//     result.push(converted);
+// }
+
+// let max = result[0];
+// let min = result[0];
+
+// for (let i=0; i<result.length; i++)
+// {
+//     if(result[i]>max)
+//     {
+//         max = result[i];
+//     }
+
+//     if(result[i]<min)
+//     {
+//         min = result[i];
+//     }
+// }
+
+
+// let middle = (max+min)/2;
+// console.log(max,min,middle);
+
+
+
+
+
+//Home task - 2
+
 let result = [];
+
 
 for (let i=0; i<7; i++)
 {
@@ -15,25 +51,22 @@ for (let i=0; i<7; i++)
     result.push(converted);
 }
 
-let max = result[0];
-let min = result[0];
+let even = [];
 
 for (let i=0; i<result.length; i++)
 {
-    if(result[i]>max)
+    if(result[i]%2==0)
     {
-        max = result[i];
+        even.push(result);
+        
     }
-
-    if(result[i]<min)
-    {
-        min = result[i];
-    }
+    
 }
 
+let evenCount = even.length;
+console.log(evenCount);
 
-let middle = (max+min)/2;
-console.log(max,min,middle);
+
 
 
 
