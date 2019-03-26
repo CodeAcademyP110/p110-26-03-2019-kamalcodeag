@@ -1,5 +1,63 @@
 "use strict";
 
+//HOME TASKS -START-
+
+
+
+//Home task - 1
+
+let result = [];
+
+for (let i=0; i<7; i++)
+{
+    let userInput = prompt(`Please, insert ${i+1}. number :`);
+    let converted = +userInput;
+    result.push(converted);
+}
+
+let max = result[0];
+let min = result[0];
+
+for (let i=0; i<result.length; i++)
+{
+    if(result[i]>max)
+    {
+        max = result[i];
+    }
+
+    if(result[i]<min)
+    {
+        min = result[i];
+    }
+}
+
+
+let middle = (max+min)/2;
+console.log(max,min,middle);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//HOME TASKS -END-
+
+
+
+//------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------
+
+
+
 // let numbers = [];
 
 // let max = numbers[0];
@@ -50,32 +108,33 @@
 
 //CLASSWORK
 
-let numbers = [];
+// let numbers = [];
 
-for(let i = 0; i < 5; i++)
-{
-    //numbers.push(+prompt(`${i+1}-ci reqemi daxil edin: `))
-    // let userInput = prompt(`${i+1}-ci reqemi daxil edin: `);
-    let userInput = prompt(i+1 + "-ci reqemi daxil edin: ");
-    let userNumber = +userInput;
-    numbers.push(userNumber);
-}
+// for(let i = 0; i < 5; i++)
+// {
+//     //numbers.push(+prompt(`${i+1}-ci reqemi daxil edin: `))
+//     // let userInput = prompt(`${i+1}-ci reqemi daxil edin: `);
+//     let userInput = prompt(i+1 + "-ci reqemi daxil edin: ");
+//     let userNumber = +userInput;
+//     numbers.push(userNumber);
+// }
 
-let max  = numbers[0];
-let min  = numbers[0];
+// let max  = numbers[0];
+// let min  = numbers[0];
 
-for(let i = 0; i < numbers.length; i++)
-{
-    if(numbers[i] > max)
-    {
-        max = numbers[i];
-    }
+// for(let i = 0; i < numbers.length; i++)
+// {
+//     if(numbers[i] > max)
+//     {
+//         max = numbers[i];
+//     }
 
-    if(numbers[i] < min)
-    {
-        min = numbers[i];   
-    }
-}
+//     if(numbers[i] < min)
+//     {
+//         min = numbers[i];   
+//     }
+// }
 
-console.log(max, min);
+// console.log(max, min);
+
 
