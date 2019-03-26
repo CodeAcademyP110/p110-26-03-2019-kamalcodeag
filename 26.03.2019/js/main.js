@@ -41,6 +41,37 @@
 
 //Home task - 2
 
+// let result = [];
+
+
+// for (let i=0; i<7; i++)
+// {
+//     let userInput = prompt(`Please, insert ${i+1}. number :`);
+//     let converted = +userInput;
+//     result.push(converted);
+// }
+
+// let even = [];
+
+// for (let i=0; i<result.length; i++)
+// {
+//     if(result[i]%2==0)
+//     {
+//         even.push(result);
+        
+//     }
+    
+// }
+
+// let evenCount = even.length;
+// console.log(evenCount);
+
+
+
+
+
+// Home task - 3
+
 let result = [];
 
 
@@ -51,25 +82,28 @@ for (let i=0; i<7; i++)
     result.push(converted);
 }
 
-let even = [];
+let all = result[0];
+let odd = result[0]; //wrong result : must be 16, but not 17
+let even = result[0]; //wrong result : must be 12, but not 13
 
 for (let i=0; i<result.length; i++)
 {
+    if(true)
+    {
+        all += result[i];
+    }
+    if(result[i]%2==1)
+    {
+        odd += result[i];
+    }
     if(result[i]%2==0)
     {
-        even.push(result);
-        
+        even += result[i];
     }
     
 }
 
-let evenCount = even.length;
-console.log(evenCount);
-
-
-
-
-
+console.log(all,odd,even);
 
 
 
