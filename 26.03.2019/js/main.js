@@ -72,38 +72,71 @@
 
 // Home task - 3
 
+// let result = [];
+
+
+// for (let i=0; i<7; i++)
+// {
+//     let userInput = prompt(`Please, insert ${i+1}. number :`);
+//     let converted = +userInput;
+//     result.push(converted);
+// }
+
+// let all = result[0];
+// let odd = result[0]; //wrong result : must be 16, but not 17
+// let even = result[0]; //wrong result : must be 12, but not 13
+
+// for (let i=0; i<result.length; i++)
+// {
+//     if(true)
+//     {
+//         all += result[i];
+//     }
+//     if(result[i]%2==1)
+//     {
+//         odd += result[i];
+//     }
+//     if(result[i]%2==0)
+//     {
+//         even += result[i];
+//     }
+    
+// }
+
+// console.log(all,odd,even);
+
+
+
+
+//Home task - 4 (UNSOLVED !)
+
 let result = [];
 
-
-for (let i=0; i<7; i++)
+for (let i=0; i<10; i++)
 {
-    let userInput = prompt(`Please, insert ${i+1}. number :`);
-    let converted = +userInput;
-    result.push(converted);
+    let userInput = prompt(`Please insert ${i+1}. word :`)
+
+    while(!isNaN(userInput))
+    {
+        userInput = prompt(`Please insert only word :`)
+        
+    }
+    result.push(userInput);
 }
 
-let all = result[0];
-let odd = result[0]; //wrong result : must be 16, but not 17
-let even = result[0]; //wrong result : must be 12, but not 13
+let longWord = [];
+let shortWord = [];
 
-for (let i=0; i<result.length; i++)
+for(let i=0; i<result.length; i++)
 {
-    if(true)
+    if(result[i].length>longWord.length)
     {
-        all += result[i];
+        longWord.push(result);
     }
-    if(result[i]%2==1)
-    {
-        odd += result[i];
-    }
-    if(result[i]%2==0)
-    {
-        even += result[i];
-    }
-    
 }
 
-console.log(all,odd,even);
+
+console.log(longWord);
 
 
 
